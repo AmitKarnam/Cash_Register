@@ -66,3 +66,7 @@ table,th,td{
     margin: auto;
     border:1px solid black;
 }
+
+td{
+    padding: 6px;
+}
