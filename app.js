@@ -12,14 +12,14 @@ checkBtn.addEventListener('click',  function validateBillandCashAmount() {
 
     // The JavaScript Number type is a double-precision 64-bit binary format IEEE 754 value, like double in Java.
     if(Number(billAmount.value) > 0){
-
+        
         if(Number(cashGiven.value) >= Number(billAmount.value)){
            const differenceAmount = Number(cashGiven.value) - Number(billAmount.value);
            CalculateChange(differenceAmount);
         }
     
         else{
-            showMessage("Please provide sufficcient amount.");
+            showMessage("Cash given not valid \nHint : Cash given should be greater than or equal to bill amount.");
         }
     }
 
@@ -39,7 +39,7 @@ function showMessage(msg){
 }
 
 function CalculateChange(differenceAmount){
-    console.log(differenceAmount);
+    
     for(let i=0; i<availableNotes.length;i++){
 
         const nosofNotes = Math.trunc(

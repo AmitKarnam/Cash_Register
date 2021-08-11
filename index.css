@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 body{
@@ -12,13 +13,56 @@ body{
     flex-direction: column;
     margin-top:75px;
     width:50vw;
-    height:500px;
+    height:600px;
     background-color: #b8c6db;
     background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
     border-radius: 25px;
     margin: auto;
+    box-shadow: 7px 10px 38px 3px rgba(1, 111, 255, 0.836);
+    -webkit-box-shadow: 7px 10px 38px 3px  rgba(1, 111, 255, 0.836);
+    -moz-box-shadow: 7px 10px 38px 3px  rgba(1, 111, 255, 0.836);
+
 }
 
-.hading{
+.heading{
     text-align: center;
+}
+
+.description{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+label{
+    margin-left: 3vw;
+    font-weight: 545;
+}
+
+input[type=text]{
+    width: 60%;
+    margin-left: 3vw;
+    height: 25px;
+}
+
+#checkBtn{
+    margin:0.5vw;
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 30px;
+    font-size: larger;
+    
+}
+
+caption{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+table,th,td{
+    table-layout: auto;
+    width:45vw;
+    margin: auto;
+    border:1px solid black;
 }
